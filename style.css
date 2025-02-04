@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'roboot', sans-serif;
+  user-select: none;
+}
+
+.main-container {
+  width: 100%;
+  color: #000000;
+  padding-top: 48px;
+}
+
+nav {
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5vw;
+}
+
+nav ul li a {
+  font-weight: 300;
+  color: #585858;
+  transition: 600ms;
+}
+
+nav ul li a:hover {
+  color: #000000;
+}
+
+#menu {
+  display: none;
+}
+
+
+
+/*--- section welcome ---*/
+.welcome {
+  width: 70%;;
+  height: 30vw;
+  margin: auto;
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/thai-aos-en-banner-hero-20160202?wid=1440&hei=689&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5vw;
+}
+
+/*--- section product ---*/
+.product-mac,
+.product-iphone,
+.product-watch,
+.product-ipad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5vw 0;
+  cursor: pointer;
+}
+
+.product-mac h2,
+.product-iphone h2,
+.product-watch h2,
+.product-ipad h2 {
+  font-size: 2vw;
+  font-weight: 300;
+  margin-bottom: 2vw;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1vw;
+}
+
+.grid-product {
+  border-radius: 25px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.grid-product:hover {
+  background: #e1e1e1;
+}
+
+.grid-product img {
+  width: 22vw;
+}
+
+.grid-detail {
+  margin: 2vw 0;
+  text-align: center;
+}
+
+.grid-detail p:last-child {
+    margin-top: 1vw;
+}
+
+.grid-detail p:first-child {
+  transition: .5s;
+}
+
+.grid-product:hover>.grid-detail p:first-child {
+  color: #3498db;
+}
+
+/*-------*/
+.grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1vw;
+}
+
+.grid-product-full {
+  height: 35vw;
+  width: 75%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.grid-product-full .img {
+  width: 70%;
+  height: 30vw;
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/edu-accessories-201903?wid=2136&hei=960&fmt=png-alpha&.v=1618079611000");
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-detail-sum {
+  width: 50%;
+  text-align: center;
+
+}
+
+.grid-detail-sum h2 {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.grid-detail-sum p {
+  margin: 1.5vw 0;
+}
+
+.grid-detail-sum a {
+  color: #3498db;
+}
+
+.grid-detail-sum a:hover {
+  text-decoration: underline;
+}
+
+/*--- footer ---*/
+footer {
+  width: 100%;
+  padding: 0 15vw;
+  padding-bottom: 1.5vw;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-main {
+  width: 100%;
+}
+
+.footer-detail {
+  font-size: .8vw;
+  color: #95a5a6;
+  padding: 1.7vw 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.footer-detail a {
+  color: #2c3e50;
+}
+
+.footer-detail a:hover {
+  text-decoration: underline;
+}
+
+.footer-welcome {
+  display: flex;
+  margin: 1.5vw 0;
+  font-size: .8rem;
+  color: #34495e;
+}
+
+.footer-welcome i {
+  margin-right: 1vw;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-ul ul {
+  list-style: none;
+}
+
+.footer-ul ul li {
+  margin: .5vw 0;
+}
+
+.footer-ul ul li h4 {
+  color: #34495e;
+  font-size: .8vw;
+}
+
+.footer-ul ul li a {
+  color: #7f8c8d;
+  font-size: .8vw;
+}
+
+.footer-ul ul li a:hover {
+  text-decoration: underline;
+}
+
+#mt {
+  padding-top: 2.7vw;
+}
+
+.footer-contact {
+  border-bottom: 1px solid #bdc3c7;
+  padding: 1vw 0;
+  margin: 1vw 0;
+  color: #7f8c8d;
+  font-size: .8vw;
+}
+
+.footer-contact a {
+  color: #3498db;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #7f8c8d;
+  font-size: .8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright ul {
+  display: flex;
+  list-style: none;
+  width: auto;
+}
+
+.footer-copyright ul li {
+  margin: 0 1vw;
+}
+
+.footer-copyright ul li a {
+  color: #7f8c8d;
+}
+
+.footer-copyright ul li a:hover {
+  text-decoration: underline;
+}
+
+.vr {
+  height: 1vw;
+  width: .1vw;
+  background: #bdc3c7;
+}
+
+.footer-lang {
+  display: flex;
+}
+
+.footer-lang p {
+  margin: 0 .8vw;
+}
+
+.circle {
+  width: 1vw;
+  height: 1vw;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+@media (max-width:600px) {
+  .main-container {
+    width: 100%;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 2.5vw 5vw;
+    font-size: 5vw;
+  }
+
+  #shop {
+    display: initial;
+  }
+
+  #search {
+    display: initial;
+  }
+
+
+  #icon {
+    display: initial;
+    font-size: 8vw;
+  }
+
+  #menu {
+    display: initial;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 40vh;
+    background-position: 55%;
+  }
+
+  .welcome h1 {
+    font-size: 8vw;
+    text-align: center;
+
+  }
+
+  .product-mac h2,
+  .product-iphone h2,
+  .product-watch h2,
+  .product-ipad h2 {
+    font-size: 8vw;
+    margin: 8vw 0;
+  }
+
+  .grid,
+  .grid-full {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5vw;
+  }
+
+.grid-detail{
+  margin-bottom: 13vw;
+}
+
+  .grid-product{
+    margin: 0 5vw;
+  }
+
+  .grid-product img {
+    width: 100%;
+  }
+
+  .product-ipad .grid-product img {
+    width: 80%;
+    margin: 8vw 0;
+  }
+
+  .grid-product-full {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .grid-product-full .img {
+    width: 100%;
+    height: 80vw;
+
+  }
+
+  .grid-detail-sum {
+    padding-bottom: 8vw;
+  }
+
+  .grid-product-full{
+    margin: 5vw 0 ;
+  }
+
+  footer{
+    padding: 2vw 5vw;
+  }
+
+  .footer-detail{
+    font-size: 3vw; 
+  }
+
+  .footer-detail p{
+    padding: 2vw 0;
+  }
+
+  .footer-welcome{
+    margin: 4vw 0;
+  }
+
+  .footer-ul ul li{
+    display: none;
+  }
+  
+  .footer-ul .heading{
+    display: initial;
+   
+  }
+
+  .footer-ul .heading h4{
+    font-size: 2vw;
+    padding: 1vw 3vw;
+  }
+
+  .footer-contact p{
+    font-size: 3vw;
+    margin: 3vw 0;
+  }
+
+  .footer-copyright{
+    flex-direction: column;
+    font-size: 3vw;
+    margin: 4vw 0;
+  }
+
+  .footer-copyright p,
+  .footer-copyright ul{
+    margin-bottom: 2vw;
+  }
+  .footer-copyright ul li{
+    
+    margin: 0;
+  }
+
+  .footer-copyright ul li a{
+    font-size: 2.5vw;
+  }
+
+  .vr {
+    height: 3.5vw;
+    margin: 0 1.5vw;
+    width: 1px;
+    background: #bdc3c7;
+  }
+
+  .circle {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 2vw;
+  }
+
+}

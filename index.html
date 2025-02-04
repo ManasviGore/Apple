@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple</title>
+<link rel="shortcut icon" href="ndata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAb1BMVEX///8AAADf39/y8vL5+fnIyMj8/Pzb29u6urrS0tJ7e3u+vr5+fn6enp729vampqZQUFDm5uaQkJAuLi5aWlpDQ0M8PDyJiYltbW1ycnIlJSWwsLCYmJhJSUk5OTkODg5fX1/Nzc0dHR0rKyseHh54RKSZAAAEOUlEQVR4nO3c7XaiMBAGYCNSoYr4VbVatbZ7/9e4qNUFE5FCZsdX3+d3z9nMLCZDMqHVIiIiIiIiIiIiIiIiIiIiIgI1CpOB9hjuSZAOTWakPY77EU7NUVd7JPcinJiTtvZY7kN7bf7hb2dvbvIC7eHcgWBWSInRHs8daBczYtbaA9LXvUiJGWuPSN3lU2JMqD0kbYGVEk4nEysl79pD0ta3H5Nnr2Kt+ZWrjuOXY2LtMSlb2SmZao9Jm52Sp6/rHY9Jqj0mbRv+ci7ZFez2RXtM2j6snHDj5O0yJc9erbXsVYcpsWpY7sK2WlEhIzMe6mTSfErm2qO5D7mczDiVHJ1z8vb0G2tnx5xsxk85twbdOI7tcmwURWG7WLi2w1Uynier8JHzFPT657ObzWtU9tIbj/NHgWbS7z3iK3IntSrVWeIu33sLq87PrFf/ecTSRu+uMLMHIL38/9+9uv9yr/9AD8ugJE4zjTrnP4wdu9TFrHRK/hkkjt2iomGaTaOd8FZCDiLtaHwIhlVCNctKf5VZaAfUXFw11sqW6LPKzd9NHdi7TYlESrCTIvKUGOit2lAoJdmbonZodY3EUoJ79FN5ef29nnZsNZUVr80MUbcmHZ0TnuC2uNlnnZ7gvh/3pFIC/MLzJZQS3KdE7DHBnUvEZpOhdlwNSC06qIvw3vx2eHWgVq8HMin50g6rCaGfDvCa42o68kI7rEbWt+OrAbvdQCQl2K1Ldg+jF9phNSJTxGIfYshMsYl2WI1cORxuCLtZp9rJ329ht6HMbgdYA/K7jtTeCXZLgUhKmBPmhDmpCfngvNXaiuQE+w7pt0hOoHdP7PtJXmBvFcjUsTPtsBoROj2HXnjGMjkBPhW9vLTlDfR9Y//9n0fIFYrjczde9LUDa0KmaMP+psP0dni1IG/JCp15GbPTjqw+ucZY3BplIJYT4A8sOT6N5AnulCJUye7BLsg7uZyYV+3g6hLMCWyN77wO68sSs8gXaxk+wmxsk82J2SDuzsqco+dM8WranXROEO96iecEcNtN7D3wBPCepNTG0glk6SZaooB2Qcpdftv71g6vHpnO4R+AM+zeTjAlW+3g6pLpazvALO5bcuc8BrmnWmr/HrnvQuqLBdCXmyp9Iun3oFuqX0RSgrrR9kNkbwlzm+2fT/8pwb6gkel4Twl2D9eB93NS9F/OnufuNuDSJMfrN4TA15wTn5Ub8FfIijwuyNiXvfK8Hak/xmRy5OllELanwMnLtQTkL8I4dP40T8lEOwjfBo0vTi5xe9mu6ZT1c22ni35/UTrrzB5lFS64EvJnmltgu8mV3X7cPrZyjiV5Gln//UHq2Nt+pEW4qF28AbZMrjSLty++UfWOfQf9hvC8n7JOSmvS+ON0W2zygdxmX8lLHCVpr1tlxgziMIwfPiFEREREREREREREREREREQE4y+NqDTF4rqbtgAAAABJRU5ErkJggg==" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+  <div class="curser"></div>
+
+  <nav>
+    <ul>
+      <li id="icon"><a href="#"><i class="fab fa-apple"></i></a></li>
+      <li><a class="nav-anime" href="#">Mac</a></li>
+      <li><a class="nav-anime" href="#">iPad</a></li>
+      <li><a class="nav-anime" href="#">iPhone</a></li>
+      <li><a class="nav-anime" href="#">Watch</a></li>
+      <li><a class="nav-anime" href="#">TV</a></li>
+    </ul>
+    <ul>
+      <li><a class="nav-anime" href="#">Music</a></li>
+      <li><a class="nav-anime" href="#">Service</a></li>
+      <li id="search"><a href="#"><i class="fas fa-search"></i></a></li>
+      <li id="shop"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+      <li id="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <div class="main-container">
+    <section class="welcome">
+      <h1>Shop for your favorite Apple products.</h1>
+    </section>
+
+    <section class="product-mac">
+      <div class="container">
+        <h2>Mac</h2>
+        <div class="grid">
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082">
+            <div class="grid-detail">
+              <p>MacBook Air</p>
+              <p>From ฿35,000</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-pro-segment-2019?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916135">
+            <div class="grid-detail">
+              <p>MacBook Pro</p>
+              <p>From ฿42,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1570232081431">
+            <div class="grid-detail">
+              <p>iMac</p>
+              <p>From ฿37,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-pro-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1570231926191">
+            <div class="grid-detail">
+              <p>iMac Pro</p>
+              <p>From ฿172,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-pro-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1524766968633">
+            <div class="grid-detail">
+              <p>Mac Pro</p>
+              <p>From ฿114,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-mini-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1539466285370">
+            <div class="grid-detail">
+              <p>Mac mini</p>
+              <p>From ฿27,900</p>
+            </div>
+          </div> <!--end grid-product-->
+        </div> <!--end grid-->
+      </div> <!--end container-->
+    </section>
+
+
+    <section class="product-iphone">
+      <div class="container">
+        <h2>iPhone</h2>
+        <div class="grid">
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801">
+            <div class="grid-detail">
+              <p>iPhone 11 Pro</p>
+              <p>From ฿35,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566851">
+            <div class="grid-detail">
+              <p>iPhone 11</p>
+              <p>From ฿24,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-xr-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1535393884526">
+            <div class="grid-detail">
+              <p>iPhone XR</p>
+              <p>From ฿21,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-iphone-8-201709?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1504891668190">
+            <div class="grid-detail">
+              <p>iPhone 8</p>
+              <p>From ฿15,900</p>
+            </div>
+          </div>
+        </div> <!--end grid-->
+      </div> <!--end container-->
+    </section>
+
+
+
+    <section class="product-watch">
+      <div class="container">
+        <h2>Watch</h2>
+        <div class="grid">
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208">
+            <div class="grid-detail">
+              <p>Apple Watch Series 5</p>
+              <p>From ฿13,400</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-nike-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567202843775">
+            <div class="grid-detail">
+              <p>Apple Watch Nike</p>
+              <p>From ฿13,400</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-hermes-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1568373934272">
+            <div class="grid-detail">
+              <p>Apple Watch Hermes</p>
+              <p>From ฿40,900</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-edition-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1568066151825">
+            <div class="grid-detail">
+              <p>Apple Watch Edition Series 5</p>
+              <p>From ฿25,400</p>
+            </div>
+          </div>
+
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-3-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391348">
+            <div class="grid-detail">
+              <p>Apple Watch Series 3</p>
+              <p>From ฿6,400</p>
+            </div>
+          </div><!--end grid-product-->
+        </div> <!--end grid-->
+      </div> <!--end container-->
+    </section>
+
+    <section class="product-ipad">
+      <div class="container">
+        <h2>iPod and Apple TV</h2>
+        <div class="grid-full">
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-ipod-touch-201509?wid=400&hei=300&fmt=png-alpha&.v=1491260462715">
+            <div class="grid-detail">
+              <p>iPod Touch</p>
+              <p>Form ฿6,900</p>
+            </div>
+          </div>
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090">
+            <div class="grid-detail">
+              <p>Apple TV 4K</p>
+              <p>Form ฿7,528</p>
+            </div>
+          </div>
+          <div class="grid-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-apple-tv4k-201709?wid=400&hei=300&fmt=png-alpha&.v=1504891668090">
+            <div class="grid-detail">
+              <p>Apple TV HD</p>
+              <p>Form ฿6,168</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-product-full">
+          <div class="img">
+
+          </div>
+          <div class="grid-detail-sum">
+            <h2>Accessories</h2>
+            <p>get things done in style.</p>
+            <a href="#">shop now <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-detail">
+          <p>Prices are inclusive of VAT. Free delivery for all orders.</p>
+          <p>*Total order value must be less than 30,000 THB. Admin fee may be charged by bank/processing entity in
+            addition to order value.</p>
+          <p>**For approved customers only. Subject to approval. For more information, see <a
+              href="#">http://www.apple.com/th-en/help/payments.</a></p>
+        </div> <!-- end footer detail -->
+
+        <div class="footer-welcome">
+          <i class="fab fa-apple"></i>
+          <i class="fas fa-chevron-right"></i>
+          <p>Welcome to the Apple Store</p>
+        </div> <!-- end footer-welcome -->
+
+        <div class="footer-ul">
+          <ul>
+            <li class="heading">
+              <h4>Shop and Learn</h4>
+            </li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Apple Watch</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">iTunes</a></li>
+            <li><a href="#">iPod Touch</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+
+          <ul>
+            <li class="heading">
+              <h4>Apple Store</h4>
+            </li>
+            <li><a href="#">Apple Store App</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shopping Help</a></li>
+          </ul>
+
+          <ul>
+            <li class="heading">
+              <h4>For Education</h4>
+            </li>
+            <li><a href="#">Apple and Education</a></li>
+            <li><a href="#">Shop for College</a></li>
+            <li class="heading" id="mt">
+              <h4>For Business</h4>
+            </li>
+            <li><a href="#">Apple and Business</a></li>
+            <li><a href="#">shop for Business</a></li>
+          </ul>
+
+          <ul>
+            <li class="heading">
+              <h4>Account</h4>
+            </li>
+            <li><a href="#">Manage Your Apple ID</a></li>
+            <li><a href="#">Apple Store Account</a></li>
+            <li><a href="#">iClound.com</a></li>
+            <li class="heading" id="mt">
+              <h4>Apple Values</h4>
+            </li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Environment</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Supplier Responsibility</a></li>
+          </ul>
+
+          <ul>
+            <li class="heading">
+              <h4>About Apple</h4>
+            </li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact Apple</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <p>More ways to shop: visit an <a href="#">Apple Store, </a>Call 001‑800‑65‑6957, or <a href="#">find a
+              seller</a></p>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright © 2019 Apple Inc. All rights reserved.</p>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <div class="vr"></div>
+            <li><a href="#">Terms of Use</a></li>
+            <div class="vr"></div>
+            <li><a href="#">Sales and Refunds</a></li>
+            <div class="vr"></div>
+            <li><a href="#">Legal</a></li>
+            <div class="vr"></div>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+
+          <div class="footer-lang">
+            <div class="circle">
+              <img
+                src="https://s.yimg.com/fz/api/res/1.2/a.Ab5Etcf1OW0RF0In.QDw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/16676c2c-38d4-3f0a-8ddd-4a2ff804ed60/t_500x300">
+            </div>
+            <p>IND</p>
+            <div class="vr"></div>
+            <p>India</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
